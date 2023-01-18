@@ -1,0 +1,44 @@
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+.navColo:hover {
+  color: rgb(69, 91, 255);
+}
+.ravi {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.fa-user {
+  margin-right: 5px;
+}
+.login {
+  background-color: rgb(213, 241, 252);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.344) 0px 3px 8px;
+  border: 2px solid rgb(2, 2, 109);
+  transition: all 0.2s linear;
+  text-align: center;
+  justify-content: center;
+}
+.login:hover {
+  transform: scale(0.93);
+}
+@media (max-width: 992px) {
+  .LoginU {
+    width: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .LoginU {
+    width: 20%;
+  }
+}
+@media (max-width: 473px) {
+  .LoginU {
+    width: 32%;
+  }
+}

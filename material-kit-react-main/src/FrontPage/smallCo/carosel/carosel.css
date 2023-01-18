@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.caro-top {
+  margin-top: 69px;
+}
+.Carocenter {
+  margin: auto;
+  padding: 10px;
+  justify-content: start;
+}
+.caropading {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.Carocenter h1 {
+  font-weight: 600;
+  font-family: 'Fugaz One', cursive;
+  /* color: #e8b100; */
+  color: rgb(244, 166, 9);
+  text-shadow: -1px 4px 5px rgba(0, 0, 0, 0.799);
+}
+.Carocenter p {
+  font-weight: 300;
+  color: white;
+  text-shadow: -1px 4px 5px rgba(0, 0, 0, 0.792);
+
+  font-size: 22px;
+}
+.carousalheader {
+  font-size: 4.4vw;
+  line-height: 1;
+}
+image {
+  object-fit: contain;
+}
+.carousel-itemm::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.09;
+}
+.caro1 {
+  background-image: url('./image/Caro1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.caro2 {
+  background-image: url('./image/Caro2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.caro3 {
+  background-image: url('./image/Caro3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .Carocenter h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .carobtn {
+    justify-content: center;
+    text-align: center;
+  }
+  .Carocenter p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .caropading {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .Carocenter {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 985px) {
+  .caro-top {
+    margin-top: 60px;
+  }
+}
+/* ==============(button)========================================== */

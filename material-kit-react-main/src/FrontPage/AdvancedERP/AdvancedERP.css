@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kanit&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: #37517e;
+}
+
+#hero .container {
+  padding-top: 72px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#hero .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+}
+
+#hero .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #47b2e4;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    margin-top: 50px;
+    height: 100vh;
+    text-align: center;
+  }
+
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ==============(button)========================================== */
+
+@media (max-width: 568px) {
+  .btnCSS {
+    display: flex;
+  }
+  .btnCSS button {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    justify-content: center;
+  }
+}
+/* =========== (Advanced ERP) ======================== */
+
+.AdvancedERP h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.AdvancedERP span {
+  font-weight: 700;
+  font-size: 18px;
+}
+.AdvancedERP p {
+  font-size: 19px;
+}
+.ProgressBar {
+  margin: auto;
+  height: 4px;
+  width: 15%;
+}
+.info-box-text {
+  font-size: 19px;
+  color: rgb(105, 97, 97);
+  font-weight: 500;
+}
+.info-box-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.crumina-info-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.img {
+  max-width: 20%;
+  margin-bottom: 10px;
+}
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+/* ====================== (Want call back from our Support Team?) ========================================== */
+
+#bg-img {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M828.912%2c575.5C855.872%2c574.417%2c877.191%2c555.029%2c890.224%2c531.403C902.754%2c508.689%2c906.325%2c481.264%2c893.256%2c458.856C880.275%2c436.598%2c854.679%2c426.199%2c828.912%2c426.276C803.294%2c426.353%2c779.014%2c437.645%2c765.231%2c459.239C750.285%2c482.655%2c745.087%2c512.332%2c758.432%2c536.696C772.24%2c561.906%2c800.191%2c576.654%2c828.912%2c575.5' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M158.99475727902097 15.00040480609345L25.129082970629185-20.868794519087828-10.7401163545521 112.99687978930396 123.12555795383969 148.86607911448525z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M532.69 17.31 a101.73 101.73 0 1 0 203.46 0 a101.73 101.73 0 1 0 -203.46 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M582.78930873323 366.60609273858194L486.4518895502964 399.7777263563275 584.3780495683816 527.6980383218552z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M841.8956961329507 249.22177540185686L947.5743827628484 212.83368545899773 805.5076061900916 143.54308877195916z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M121.127%2c499.245C138.906%2c498.574%2c154.432%2c488.536%2c163.643%2c473.314C173.231%2c457.469%2c177.032%2c437.872%2c168.07%2c421.665C158.856%2c405.002%2c140.159%2c397.019%2c121.127%2c396.427C100.848%2c395.796%2c79.316%2c401.204%2c68.834%2c418.576C58.074%2c436.409%2c61.331%2c459.273%2c72.66%2c476.75C83.044%2c492.769%2c102.051%2c499.965%2c121.127%2c499.245' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M286.79 344.94 a96.41 96.41 0 1 0 192.82 0 a96.41 96.41 0 1 0 -192.82 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M98.449%2c778.176C153.033%2c779.539%2c208.945%2c756.611%2c234.361%2c708.286C258.498%2c662.393%2c239.054%2c608.407%2c210.505%2c565.121C185.227%2c526.795%2c144.351%2c503.135%2c98.449%2c502.216C50.768%2c501.262%2c3.609%2c520.025%2c-21.655%2c560.475C-48.411%2c603.315%2c-50.589%2c657.552%2c-26.19%2c701.777C-0.961%2c747.508%2c46.236%2c776.872%2c98.449%2c778.176' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1133.706%2c357.886C1188.032%2c354.312%2c1224.517%2c309.158%2c1252.527%2c262.473C1281.704%2c213.844%2c1313.224%2c155.705%2c1284.267%2c106.945C1255.624%2c58.713%2c1189.598%2c57.606%2c1133.706%2c62.389C1087.343%2c66.356%2c1048.339%2c91.017%2c1022.014%2c129.386C990.61%2c175.158%2c959.945%2c230.248%2c984.322%2c280.118C1010.745%2c334.175%2c1073.667%2c361.836%2c1133.706%2c357.886' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#feturemenu {
+  background-color: rgba(10, 51, 91, 0.334);
+  padding-top: 100px;
+}
+#feturemenu h1 {
+  font-weight: 650;
+}
+.feturemenu-img {
+  width: 50%;
+  margin-top: 40px;
+}
+/* ========================================================== */
+@media (max-width: 768px) {
+  .contantCenter {
+    text-align: center;
+  }
+  .img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+/* // ====================== (Management System) =========================================== */
+/* .aboutfeture {
+  padding-left: 45px;
+  padding-right: 45px;
+} */
+.aboutfeture h1 {
+  font-weight: 650;
+  font-family: 'Kanit', sans-serif;
+}
+.aboutfeture .Progress {
+  margin: auto;
+  height: 3px;
+  width: 35%;
+  margin-left: 0;
+}
+.aboutfeture .p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(19, 18, 18);
+}
+.fa-check {
+  margin-right: 20px;
+  color: red;
+}
+
+/* ==========================<Automations in our ERP System>================================== */
+.info-box-textt {
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.imgg {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+#even {
+  background-color: #f1f2ec;
+}
+#feturemenu2 {
+  background-color: rgba(10, 51, 91, 0.334);
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+#feturemenu2 h1 {
+  font-weight: 650;
+}
+.feturemenu2-img {
+  width: 50%;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .contantCenter {
+    text-align: center;
+  }
+  .imgg {
+    width: 13%;
+  }
+}
+/* ================================================================================ */
+.counter {
+  padding: 30px;
+}
+.counter {
+  background-image: url('https://zenoxerp.com/assets-web/img/demo-content/stunning-header/pattern-bg-lime.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+#Counter h1 {
+  color: white;
+  font-size: 75px;
+  font-weight: 900;
+}
+#Counter h5 {
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+}
+/* ============================(Footer)========================================== */
+a {
+  text-decoration: none;
+}
+.FooterP {
+  padding: 40px;
+}
+.FooterP p {
+  font-size: 17px;
+  color: rgba(220, 220, 220, 0.622);
+}
+.FooterP small {
+  font-size: 10px;
+  color: rgba(220, 220, 220, 0.622);
+}
+.footer-B h5 {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(220, 220, 220, 0.622);
+}
+.footer-B h4 {
+  font-weight: 300;
+  font-size: 18px;
+}
+.footer-B h4:hover {
+  transition: all linear 0.3s;
+  color: skyblue;
+}
+.email {
+  color: white;
+  text-decoration: none;
+}
+.email:hover {
+  transition: all linear 0.3s;
+  color: skyblue;
+}
+.footer-B p {
+  color: rgba(220, 220, 220, 0.622);
+}
