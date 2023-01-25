@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { Outlet, Link } from 'react-router-dom';
 
 function Header1() {
   return (
@@ -23,7 +24,7 @@ function Header1() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link navColo " aria-current="page" href="#">
+                <a className="nav-link navColo " aria-current="page" to="/">
                   Home
                 </a>
               </li>

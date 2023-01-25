@@ -14,10 +14,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <HelmetProvider>
-    <AdvancedERP />
-    {/* <BrowserRouter>
+    {/* <AdvancedERP /> */}
+    <BrowserRouter>
       <App />
-    </BrowserRouter> */}
+    </BrowserRouter>
   </HelmetProvider>
 );
 
