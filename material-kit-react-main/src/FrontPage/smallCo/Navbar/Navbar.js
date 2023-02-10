@@ -24,7 +24,7 @@ function Header1() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link navColo " aria-current="page" to="/">
+                <a className="nav-link navColo" href="#">
                   Home
                 </a>
               </li>
@@ -67,10 +67,10 @@ function Header1() {
             </ul>
             <ul className="nav navbar-right navbar-nav LoginU">
               <li className="nav-item login">
-                <a className="nav-link " href="#">
+                <Link className="nav-link " to={'/login'}>
                   <i className="fa fa-user" aria-hidden="true" />
                   Log-In
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

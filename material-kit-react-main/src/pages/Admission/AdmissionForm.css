@@ -1,0 +1,40 @@
+#form {
+  border: 0px solid rgb(218, 218, 218);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#form h5 {
+  font-weight: 550;
+  padding: 18px;
+  margin-bottom: 15px;
+  background-color: #e3f0fa;
+  color: darkblue;
+  border-radius: 6px;
+}
+.FeesPackage {
+  color: rgb(0, 0, 0);
+  background-color: rgb(254 247 242);
+  border: 2px solid rgb(248, 223, 204);
+  margin-bottom: 5px;
+}
+/* ======(table)============ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.form table {
+  max-height: 50px;
+  max-width: 10px;
+}
