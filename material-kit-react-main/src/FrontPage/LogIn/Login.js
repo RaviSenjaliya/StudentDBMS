@@ -1,19 +1,22 @@
 import { React, useState } from 'react';
 import axios from 'axios';
 import TextField from '@mui/material/TextField';
-import './Form.css';
 import { useNavigate } from 'react-router-dom';
+import './Form.css';
 
 const Login = () => {
   const [Data, setData] = useState({
     email: '',
     password: '',
   });
+  const mynav = useNavigate();
+
   const myhandler = (e) => {
     setData({ ...Data, [e.target.name]: e.target.value });
   };
-
-  const mynav = useNavigate();
+  const goRegistration = (e) => {
+    mynav('/registration');
+  };
 
   const mysub = (e) => {
     e.preventDefault();
@@ -31,16 +34,25 @@ const Login = () => {
       });
   };
   return (
-    <div>
-      <div className="midd toop mt-5 p-4">
+    <div id="bg" className="log-in">
+      <div className="midd toop   p-4">
         <form onSubmit={mysub}>
-          <h1 className="text-center  bg-light  p-2 rounded-2  mb-4 headerr">Log-In</h1>
+          <h1 className="text-center  bg-light  p-2 rounded-2  mb-4 headerr">Sing-In</h1>
 
           <TextField label="email" name="email" onChange={myhandler} className="w-100 mt-3" variant="outlined" />
           <TextField label="password" name="password" onChange={myhandler} className="w-100 mt-3" variant="outlined" />
 
           <input type="submit" className="btn btn-danger mt-4  form-control" value="Submit" />
         </form>
+        <hr className="mt-4" />
+        <p className="text-center">
+          Don't have an account yet?
+          <span>
+            <button className="Singup" onClick={goRegistration}>
+              Registration!
+            </button>
+          </span>
+        </p>
       </div>
     </div>
   );
