@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import './Form.css';
+import Swal from 'sweetalert2';
 
 const Registration = () => {
   const [Data, setData] = useState({
@@ -19,6 +20,7 @@ const Registration = () => {
   const myhandler = (e) => {
     setData({ ...Data, [e.target.name]: e.target.value });
   };
+
   const mysubmit = (e) => {
     e.preventDefault();
 
@@ -26,10 +28,14 @@ const Registration = () => {
       .post('http://localhost:4000/accounts/register', Data)
       .then((e) => {
         console.log(e.data);
-        // toast('successfully...');
+        Swal.fire('Registration successful!', 'Your Registration has been successfully completed.', 'success');
       })
       .catch(() => {
-        // toast('Something wrong...');
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+        });
       });
   };
   const goRegistration = (e) => {

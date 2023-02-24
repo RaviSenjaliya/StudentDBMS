@@ -3,6 +3,7 @@ import axios from 'axios';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
 import './Form.css';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const [Data, setData] = useState({
@@ -26,11 +27,14 @@ const Login = () => {
       .then((y) => {
         console.log(y);
         localStorage.setItem('ERPdata', JSON.stringify(y.data));
-        // toast('login successfully');
         mynav('/dashboard/app');
       })
       .catch((y) => {
-        // toast('404');
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+        });
       });
   };
   return (
